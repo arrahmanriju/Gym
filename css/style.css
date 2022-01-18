@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================================================
+common css end
+==================================================================== */
+
+
+/* =================================================================
+Navbar part css start
+==================================================================== */
+.main-menu {
+    background-color: rgba(53, 53, 53, 0.25);
+    height: 50px;
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    width: 100%;
+    left: 0;
+}
+
+
+.main-menu .navbar-brand {
+    background-color: #323232;
+    height: 70px;
+    width: 245px;
+    text-align: center;
+    line-height: 70px;
+    transform: skew(-35deg);
+    -webkit-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -ms-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    position: relative;
+}
+
+.main-menu .navbar-brand::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: black;
+}
+
+.main-menu .navbar-brand::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: black;
+}
+
+.main-menu .navbar-brand img {
+    transform: skew(35deg);
+    -webkit-transform: skew(35deg);
+    -moz-transform: skew(35deg);
+    -ms-transform: skew(35deg);
+    -o-transform: skew(35deg);
+}
+
+.main-menu ul li a {
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 12px;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    position: relative;
+}
+
+.main-menu ul li a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #e23e38;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.main-menu ul li a:hover {
+    background-color: white;
+    color: #313131;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* =================================================================
+Navbar part css end
+==================================================================== */
+
+/* =================================================================
+banner part css start
+==================================================================== */
+.banner-item {
+    padding-top: 255px;
+    padding-bottom: 115px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-item::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner-item .banner-text h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.banner-item .banner-text h3::after {
+    position: absolute;
+    content: '';
+    width: 170px;
+    height: 3px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e23e38;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.banner-item .banner-text h3::before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 3px;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: #e23e38;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+.banner-item .banner-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #e23e38;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.banner-item .banner-text h1::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 170px;
+    left: 0px;
+    top: -19px;
+    background-color: #e23e38;
+}
+
+.banner-item .banner-text h1::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 170px;
+    right: 19px;
+    top: -19px;
+    background-color: #e23e38;
+}
+
+.banner-item .banner-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #dddddd;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.banner-item .banner-text p::after {
+    position: absolute;
+    content: '';
+    width: 123px;
+    height: 3px;
+    left: 0px;
+    top: 77px;
+    background-color: #e23e38;
+}
+
+.banner-item .banner-text p::before {
+    position: absolute;
+    content: '';
+    width: 78px;
+    height: 3px;
+    right: 19px;
+    top: 77px;
+    background-color: #e23e38;
+}
+
+.banner-item .banner-text a {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border: 1px solid white;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.banner-item .banner-text a:hover {
+    background-color: #e23e38;
+    border: 1px solid #e23e38;
+}
+
+#banner .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner .slick-dots li {
+    display: inline-block;
+}
+
+#banner .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#banner .slick-dots li.slick-active button {
+    width: 15px;
+    height: 15px;
+    background: #e23e38;
+    border: 1px solid #e23e38;
+}
+
+
+/* =================================================================
+banner part css end
+==================================================================== */
+/* =================================================================
+about part css start
+==================================================================== */
+#about {
+    padding: 80px 0;
+}
+
+#about .about-img {
+    position: relative;
+}
+
+#about .about-img .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#about .about-img .img-overlay .about-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #000000;
+    z-index: 999;
+    font-size: 24px;
+
+}
+
+#about .about-img .img-overlay .about-icon i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e23e38;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.common-head h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#about .about-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about .about-text p span {
+    display: block;
+    margin-top: 20px;
+}
+
+/* =================================================================
+about part css end
+==================================================================== */
+/* =================================================================
+gallery part css start
+==================================================================== */
+#gallery {
+    padding-bottom: 30px;
+}
+
+.gal-background {
+    margin-top: 30px;
+    padding: 30px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.gal-background::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.gal-img {
+    position: relative;
+}
+
+.gal-img .img-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(226, 62, 56, 0.5);
+    border: 5px solid #a8a7a0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.gal-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+.gal-icon i {
+    color: white;
+}
+
+.gal-img:hover.gal-img .img-overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.gal-img:first-child {
+    margin-bottom: 30px;
+}
+
+/* =================================================================
+gallery part css end
+==================================================================== */
+/* =================================================================
+team part css start
+==================================================================== */
+#team {
+    padding: 80px 0px;
+}
+
+#team .team-head {
+    margin-bottom: 80px;
+}
+
+.team-img {
+    position: relative;
+}
+
+.team-img .overlay {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(226, 62, 56, 0.5);
+    border: 5px solid #a8a7a0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.team-icon {
+    position: relative;
+    text-align: right;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+}
+
+.team-icon i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.team-icon i:hover {
+    background-color: white;
+    color: #1da0f2;
+}
+
+.team-text h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-text h5 {
+    margin-bottom: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team-text p {
+    padding: 0 16px;
+    margin-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #444444;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.team-text {
+    border: 1px solid transparent;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.team-main:hover .team-img .overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.team-main:hover .team-text {
+    border: 1px solid #dddddd;
+}
+
+.team-main:hover .team-text p {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.team-main {
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.team-main:hover {
+    transform: translateY(-42px);
+    -webkit-transform: translateY(-42px);
+    -moz-transform: translateY(-42px);
+    -ms-transform: translateY(-42px);
+    -o-transform: translateY(-42px);
+}
+
+/* =================================================================
+team part css end
+==================================================================== */
+
+/* =================================================================
+Testimonial part css start
+==================================================================== */
+#testimonial {
+    margin-bottom: 80px;
+}
+
+#testimonial .testimonial {
+    padding-bottom: 30px;
+}
+
+.text-bg {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.text-bg::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    z-index: -1;
+}
+
+.testi-text h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.testi-text h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.testi-text i {
+    color: #e23e38;
+}
+
+.testi-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
+    font-weight: 400;
+    color: #dddddd;
+    line-height: 18px;
+}
+
+.testi-slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: auto;
+    bottom: -30px;
+}
+
+.testi-slider .slick-dots li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.testi-slider .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testi-slider .slick-dots li.slick-active button {
+    background: #e23e38;
+    border: 1px solid #e23e38;
+}
+
+/* =================================================================
+Testimonial part css end
+==================================================================== */
+/* =================================================================
+Membership part css start
+==================================================================== */
+#Membership {
+    margin-bottom: 80px;
+}
+
+.Membership {
+    padding-bottom: 30px;
+}
+
+.member-item {
+    cursor: pointer;
+}
+
+.member-item h2 {
+    background: #dddddd;
+    padding: 20px 0;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.member-item h1 span {
+    font-size: 29px;
+}
+
+.member-item h1 {
+    padding: 35px 0;
+    background: url(../images/member1.jpg) no-repeat center;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    font-weight: 500;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.member-item h1::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.member-item ul {
+    background: #f1f1f1;
+    padding-top: 40px;
+}
+
+.member-item ul li {
+    padding-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.member-item a {
+    display: block;
+    padding: 10px 0;
+    background: #dddddd;
+    color: #606060;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.member-item:hover.member-item h2 {
+    background: #e23e38;
+    color: white;
+}
+
+.member-item:hover.member-item a {
+    background: #e23e38;
+    color: white;
+}
+
+/* =================================================================
+Membership part css end
+==================================================================== */
+
+/* =================================================================
+counter part css start
+==================================================================== */
+#count {
+    background: url(../images/counterbg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 45px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+#count::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+#count h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#count p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* =================================================================
+counter part css end
+==================================================================== */
+
+/* =================================================================
+our classes part css start
+==================================================================== */
+#classes {
+    padding-bottom: 80px;
+}
+
+.classes {
+    padding-bottom: 30px;
+}
+
+.class-tab {
+    background: #f1f1f1;
+    height: 50px;
+}
+
+.class-tab li {
+    width: 16.667%;
+    line-height: 50px;
+}
+
+.class-tab li button {
+    width: 100%;
+    padding: 0;
+    color: #222222;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.class-tab li button:hover {
+    color: #222222;
+}
+
+.class-tab .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #e23e38;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+.tab-body ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-body ul li {
+    background: #f1f1f1;
+    width: 19.6%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 50px 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+}
+
+.tab-body ul li:nth-child(5),
+.tab-body ul li:nth-child(10) {
+    margin-right: 0;
+}
+
+.tab-body ul li:nth-child(6),
+.tab-body ul li:nth-child(7),
+.tab-body ul li:nth-child(8),
+.tab-body ul li:nth-child(9),
+.tab-body ul li:nth-child(10) {
+    margin-bottom: 0px;
+}
+
+.tab-body ul li:hover {
+    background: #e23e38;
+}
+
+.tab-body ul li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.tab-body ul li:hover p {
+    color: white;
+}
+
+/* =================================================================
+our classes part css end
+=================================================================
+/* =================================================================
+sponsor part css start
+==================================================================== */
+#sponsor {
+    margin-bottom: 80px;
+}
+
+.sponsor-main .slick-slide {
+    padding: 0 12px;
+}
+
+.sponsor-main .prev,
+.nxt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 24px;
+    width: auto;
+    cursor: pointer;
+}
+
+.sponsor-main .prev {
+    left: -30px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.sponsor-main .prev:hover{
+    color: #e23e38;
+}
+.sponsor-main .nxt {
+    right: -30px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.sponsor-main .nxt:hover{
+    color: #e23e38;
+}
+.sponsor-main .slick-center:hover{
+    box-shadow: 5px 5px #a8a7a0;
+}
+/* =================================================================
+sponsor part css end
+==================================================================== */
+
+/* =================================================================
+footer part css start
+==================================================================== */
+#footer{
+    background: url(../images/footerbg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+#footer::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+#footer .first-part{
+    padding-bottom: 30px;
+}
+#footer .middle-part{
+    border-top: 1px solid #dddddd;
+    border-bottom: #dddddd solid 1px;
+    padding: 30px 0;
+}
+.footer-head h2{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.footer-first-text p{
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 6px;
+}
+.footer-secend-icon i{
+    color: #1da0f2;
+    font-size: 20px;
+}
+.footer-secend-text p{
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 30px;
+    line-height: 20px;
+}
+.footer-secend-text span{
+    display: block;
+    font-weight: 700;
+}
+.footer-third ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-third ul li{
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.footer-third ul li:nth-child(4),
+.footer-third ul li:nth-child(8),
+.footer-third ul li:nth-child(12){
+    margin-right: 0;
+}
+.footer-third ul li:nth-child(9),
+.footer-third ul li:nth-child(10),
+.footer-third ul li:nth-child(11),
+.footer-third ul li:nth-child(12){
+    margin-bottom: 0;
+}
+.address p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+.address p i{
+    color: #e23e38;
+    margin-right: 10px;
+    line-height: 18px;
+}
+.social h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.social ul li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+    line-height: 30px;
+    text-align: center;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    cursor: pointer;
+}
+.social ul li i{
+    color: white;
+    
+}
+.social ul li:hover{
+    background-color: #e23e38;
+    border: #e23e38 solid 1px;
+}
+.copy p{
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.copy p span{
+    color: #e23e38;
+}
+/* =================================================================
+footer part css end
+==================================================================== */
